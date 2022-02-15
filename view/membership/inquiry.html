@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Korea-U.S. Economic Council.Inc</title>
+	<link rel="stylesheet" href="/project_kusec/resources/css/kusec_newReset.css">
+    <link rel="stylesheet" href="/project_kusec/resources/css/kusec_common.css">
+    <link rel="stylesheet" href="/project_kusec/resources/css/kusec_img-icon.css">
+    <link rel="stylesheet" href="/project_kusec/resources/css/kusec_basicStyle.css">
+    <link rel="stylesheet" href="/project_kusec/resources/css/kusec_responsiveStyle.css">
+    <script src="/project_kusec/resources/js/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+	 <!-- header -->
+    <!-- <? include '/project_kusec/view/includes/header_eng.html' ?> -->
+    <div class="load-html" data-source="/project_kusec/view/includes/header_eng.html"></div>
+
+	<section class="section_eng">
+		<div class="contentBox membership_inquiry">
+			<div class="sub03_03_content">
+				<form action="messagePage.html" method="post" onsubmit="return formCheck()">
+					<div>
+						<p class="kusec-fc_point fz20">Name *</p>
+						<input type="text" id="name" name="name" placeholder="Enter your name." required/>
+					</div>
+					<div>
+						<p class="kusec-fc_point fz20">Phone number</p>
+						<input type="text" id="telephone" name="telephone" placeholder="Please enter only numbers without(-)" 
+						oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+					</div>
+					<div>
+						<p class="kusec-fc_point fz20">Mobile number *</p>
+						<input type="text" id="cellphone" name="cellphone" placeholder="Please enter only numbers without(-)" 
+						oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/>
+					</div>
+					<div>
+						<p class="kusec-fc_point fz20">Email *</p>
+						<input type="email" id="email" name="email" placeholder="Enter your Email." required/>
+					</div>
+					<div>
+						<p class="kusec-fc_point fz20">Inquiry *</p>
+						<textarea name="content" id="content" placeholder="Enter your inquiry" required></textarea>
+					</div>
+					<button class="kusec-bgc_point btn_detailView" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	
+    <!-- footer -->
+    <!-- <? include '/project_kusec/view/includes/footer_eng.html' ?> -->
+    <div class="load-html" data-source="/project_kusec/view/includes/footer_eng.html"></div>
+    <script>
+        $(document).ready(function(){
+            $(".load-html").each(function () {
+                $(this).load(this.dataset.source);
+            });
+         });
+    
+		//정규표현식
+		// const cellphone_regex = /^\d{3,4}-\d{3,4}-\d{4}$/;
+		// const telephone_regex = /^\d{3,4}-\d{3,4}-\d{4}$/;
+		// const email_regex = new RegExp("([0-9a-zA-Z]+)(\@{1})([0-9a-zA-Z]+)([\.]{1})([0-9a-zA-Z]+)");
+
+		// function formCheck() {
+		// 	const name = $("#name").val();
+		// 	const content = $("#content").val();
+
+		// 	if (name == '') {
+		// 		alert("Enter your name.");
+		// 		return false;
+		// 	}
+		// 	if (isPhoneNumCorrect() == false) {
+		// 		return false;
+		// 	}
+		// 	if (isEmailCorrect() == false) {
+		// 		return false;
+		// 	}
+		// 	if (content == '') {
+		// 		alert("Enter your inquiry");
+		// 		return false;
+		// 	}
+		// 	return true;
+		// }
+
+		// function isPhoneNumCorrect() {
+		// 	// 전화번호가 올바르면 데이터를 넣는다
+		// 	var telephone = $('#telephone').val();
+		// 	var cellphone = $('#cellphone').val();
+		// 	if (telephone == '') {
+		// 		alert('Enter your Phone number.');
+		// 		return false;
+		// 	}
+
+		// 	if (telephone_regex.test(telephone) == false) {
+		// 		alert('Phone number does not match the format');
+		// 		return false;
+		// 	}
+
+		// 	if (cellphone == '') {
+		// 		alert('Enter your Mobile number.');
+		// 		return false;
+		// 	}
+
+		// 	if (cellphone_regex.test(cellphone) == false) {
+		// 		alert('Mobile number does not match the format');
+		// 		return false;
+		// 	}
+
+		// 	return true;
+		// }
+
+		// function isEmailCorrect() {
+		// 	// var input_email = $('#email');
+		// 	const input_email = document.getElementById('email');
+		// 	if (email_regex.test(input_email.value) == false) {
+		// 		alert('Email does not match the format');
+		// 		return false;
+		// 	}
+		// 	return true;
+		// }
+	</script>
+</body>
+
+</html>

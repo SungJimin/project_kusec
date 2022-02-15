@@ -1,0 +1,148 @@
+<style type="text/css">
+    @import url('/project_kusec/resources/css/swiper.css');
+</style>
+<header class="headerContainer">
+    <div class="headerWrapper">
+        <div class="headerWrap fc_fff">
+            <!-- <div class="headerFirst textAlign_right">
+                <select name="language" id="selectLanguage" onchange="if(this.value) location.href=(this.value);">
+                    <option value="<c:url value='/eng' />" selected>English</option>
+                    <option value="<c:url value='/' />">Korea</option>
+                </select>
+            </div> -->
+            <div class="webHeaderWrap headerSecond d-flex justify_between">
+                <a href="/project_kusec/view/index.html" style="width: 260px;">
+                    <div class="headerLogoWrap d-flex">
+                        <div class="headerLogoMain h2">KUSEC</div>
+                        <ul class="headerLogoSub">
+                            <li>Korea-U.S</li>
+                            <li>Economic Council</li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="headerMenuWrap">
+                    <ul class="navGroup d-flex" id="navGroup">
+                        <li>
+                            <div class="gnb"><a href="/project_kusec/view/kusec/conference.html">About KUSEC</a></div>
+                            <ul class="lnb">
+                                <li><a href="/project_kusec/view/kusec/conference.html">Introduction</a></li>
+                                <li><a href="/project_kusec/view/kusec/history.html">History</a></li>
+                                <li><a href="/project_kusec/view/kusec/contract.html">U.S Network</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="gnb"><a href="/project_kusec/view/project/introduce.html">Key Activities</a></div>
+                            <!-- <ul class="lnb"></ul> -->
+                        </li>
+                        <li>
+                            <div class="gnb"><a href="/project_kusec/view/membership/inquiry.html">Contact Us</a></div>
+                            <!-- <ul class="lnb"></ul> -->
+                        </li>
+                        <li>
+                            <div class="gnb"><a href="/project_kusec/view/info/interagencyKo.html">Related Organizations</a></div>
+                            <!-- <ul class="lnb"></ul> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="img-icon bars-2line showNav" onclick="mobileShow()"></div>
+            </div>
+        </div>
+        <div class="mobileHeaderWrapper" id="mobileNav">
+            <div class="mobileHeaderWrap">
+                <div class="img-icon times" onclick="mobileHide()"></div>
+                <div class="headerMenuWrap">
+                    <ul class="navGroup">
+                        <li>
+                            <div class="gnb"><a href="javascript:void(0)">About KUSEC</a></div>
+                            <ul class="lnb">
+                                <li><a href="/project_kusec/view/kusec/conference.html">Introduction</a></li>
+                                <li><a href="/project_kusec/view/kusec/history.html">History</a></li>
+                                <li><a href="/project_kusec/view/kusec/contract.html">U.S Network</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="gnb"><a href="/project_kusec/view/project/introduce.html">Key Activities</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gnb"><a href="/project_kusec/view/membership/inquiry.html">Contact Us</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gnb"><a href="/project_kusec/view/info/interagencyKo.html">Related Organizations</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="headerFirst">
+                    <select name="language" id="selectLanguage"
+                        onchange="if(this.value) location.href=(this.value);">
+                        <option value="<c:url value='/eng' />" selected>English</option>
+                        <option value="<c:url value='/' />">Korea</option>
+                    </select>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="mainBackgroundWrap swiper">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><img src="/project_kusec/resources/img/main_banner01.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="/project_kusec/resources/img/main_banner02.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="/project_kusec/resources/img/main_banner03.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="/project_kusec/resources/img/main_banner04.jpg" alt=""></li>
+        </ul>
+        <div class="mainTextWrap fc_fff">
+            <div class="fz40">KOREA - U.S. Economic Council</div>
+            <div class="margin-top20">
+                Committed to bolstering trade, investment, and technological cooperation and strengthening economic
+                exchanges.
+            </div>
+        </div>
+    </div>
+    <script src="/project_kusec/resources/js/swiper.js"></script>
+    <script>
+        // [ onClick event ] --> fullNav show/hide
+        const mobileNav = document.getElementById("mobileNav");
+        const bodyClassList = document.body.classList;
+
+        function mobileShow() {
+            mobileNav.style.display = "block"
+            bodyClassList.add('not-scroll')
+        }
+
+        function mobileHide() {
+            mobileNav.style.display = "none"
+            bodyClassList.remove('not-scroll')
+        }
+
+        // [ mouseenter event ] --> slideDown webNav
+        const navGroup = document.getElementById("navGroup");
+        const gnb = document.querySelectorAll(".webHeaderWrap .gnb");
+        const lnb = document.querySelectorAll(".webHeaderWrap .lnb");
+
+        function webHide() {
+            for (let i = 0; i < lnb.length; i++) {
+                lnb[i].classList.remove('show');
+                lnb[i].addEventListener("mouseleave", webHide);
+            }
+        }
+        for (let j = 0; j < gnb.length; j++) {
+            function webShow() {
+                webHide();
+                const lnbEl = gnb[j].nextElementSibling;
+                if (lnbEl !== null) {
+                    lnbEl.classList.add('show')
+                }
+            }
+            navGroup.addEventListener("mouseleave", webHide);
+            gnb[j].addEventListener("mouseenter", webShow);
+        }
+        var swiper = new Swiper(".mainBackgroundWrap", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</header>

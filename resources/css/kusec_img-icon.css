@@ -1,0 +1,42 @@
+.img-icon{
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../img/img-icon.png');
+    cursor: pointer;
+}
+
+.envelope-bk{
+    background-position: -40px 0;
+}
+.envelope-wh{
+    background-position: -60px 0;
+}
+.search-bk{
+    background-position: 0 0;
+}
+.search-wh{
+    background-position: -20px 0;
+}
+.bars-2line{
+    width: 40px;
+    background-position: -80px 0;
+}
+
+.times{
+    width: 40px;
+    height: 40px;
+    background-position: 0 -120px;
+}
+.network,
+.people,
+.exchange,
+.culture{
+    width: 100px;
+    height: 100px;
+}
+.network{background-position: 0 -20px;}
+.people{background-position: -100px -20px;}
+.exchange{background-position: -200px -20px;}
+.culture{background-position: -300px -20px;}

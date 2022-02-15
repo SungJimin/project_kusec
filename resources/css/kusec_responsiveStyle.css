@@ -1,0 +1,478 @@
+@charset "UTF-8";
+@media(min-width:2000px) {
+	.mainContainer .contactKusec .imgCrop img, 
+	.mainContainer .relatedOrganizations .imgCrop img,
+	.headerContainer .mainBackgroundWrap .swiper-wrapper .swiper-slide img{
+		width: 100%;
+	}
+}
+@media(max-width:1170px) {
+    .header .headerFirst {
+        width: 100%;
+    }
+
+    .headerWrapper .headerWrap,
+    .headerContainer .mainBackgroundWrap .mainTextWrap,
+    .mainContainer .guideLayout,
+    .mainContainer .wideLayout,
+    .mainContainer .contactKusec .picTitle,
+    .mainContainer .relatedOrganizations .picTitle,
+    .section_eng,
+    .mainContainer .linkbx,
+    .footer>p{
+        width: calc(100% - 40px);
+        max-width: 1170px;
+        min-width: 300px;
+    }
+
+    .mainContainer .aboutKusec .sectionWrap .kusecBox {
+        width: calc(50% - 20px);
+    }
+}
+
+@media(max-width:1095px) {}
+
+@media(max-width:960px) {
+    /*--------------------------------------------------------------
+  >> common
+----------------------------------------------------------------*/
+	.contentBox .Confe_box{
+		width: calc(100% - 40px);
+        max-width: 960px;
+        margin: 0 auto;
+	}
+
+    .contentBox,
+    .section_eng .contentBox,
+    .project_introduce .introWrap .introTxt {
+        width: 100%;
+    }
+    .headerWrapper .headerWrap .headerFirst,
+    .headerWrapper .headerSecond .headerMenuWrap,
+    /* .contractWrap_mobile .contractMap, */
+    .section_eng .contract_table .hideTable,
+    .section_eng .sec_banner div h3:after{
+        display: none;
+    }
+    .headerWrapper .headerWrap .showNav,
+    .mainContainer .aboutKusec .sectionWrap,
+    .kusec_conference .introImgContainer .introTxtWrap {
+        display: block;
+    }
+    
+    .section_eng .contractWrap_mobile .contractMap{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .mainContainer .contactKusec .contactWrap .d-flex:nth-child(2),
+    .mainContainer .keyActivities .sectionWrap,
+    .section_eng .Confe_box .confe_ul li.d-flex {
+        -webkit-box-lines: multiple;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .section_eng{
+        width: 480px;
+        min-height: calc(100vh - 1019px);
+    }
+    .mainContainer .contactKusec .contactWrap {
+        max-width: 480px;
+        margin: 10px auto 0;
+    }
+
+    .mainContainer .aboutKusec .sectionWrap,
+    .mainContainer .keyActivities .sectionWrap {
+        width: 480px;
+        margin: 40px auto 0;
+    }
+
+    .mainContainer .aboutKusec .sectionWrap .kusecBox {
+        width: 100%;
+        margin: 10px 0;
+        max-width: 577px;
+    }
+
+    .mainContainer .keyActivities .keyBox {
+        width: calc(50% - 20px);
+        min-width: 220px;
+    }
+
+    .headerWrapper .headerSecond .headerLogoWrap .h2{
+        /* font-size: 20px; */
+        font-size: 1.429rem;
+        line-height: 20px;
+    }
+    .headerWrapper .headerSecond .headerLogoWrap .headerLogoSub{
+        line-height: 10px;
+        margin: 0 5px;
+        /* font-size: 8px */
+        font-size: 0.571rem;
+    }
+    .section_eng .info_interagency .div_box,
+    .section_eng .contentBox .Confe_box .confe_ul{
+        border-top: none;
+        padding-top: 40px;
+    }
+    .section_eng .project_introduce .introWrap .introTxt .fc_999{
+        /* font-size: 12px; */
+        font-size: 0.857rem;
+    }
+    .section_eng .sec_banner div>.d-flex>div{
+        width: calc(50% - 20px);
+        min-width: 220px;
+    }
+    /*--------------------------------------------------------------
+  >> 메인 index
+----------------------------------------------------------------*/
+
+    .visualbx .visualArea .txt h2 {
+        font-size: 1.5em;
+    }
+
+    .visualbx .visualArea .txt h2 span {
+        font-size: inherit;
+    }
+
+    .visualbx .visualArea .txt h2:after {
+        left: 0;
+    }
+
+    .mainbx .row {
+        min-width: 300px;
+    }
+
+    .mainbx .row .boardbx,
+    .mainbx .row .Kusec_bx.contactContainer,
+    .mainbx .row .Related_bx.interagencyContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainbx .row .Kusec_bx,
+    .mainbx .row .Related_bx {
+        top: 0px;
+    }
+
+    .contactContainer,
+    .interagencyContainer {
+        float: inherit;
+    }
+
+
+
+    /*--------------------------------------------------------------
+  >> 협의회소개 kusec_conference
+----------------------------------------------------------------*/
+    .kusec_conference .introBoxContainer,
+    .kusec_conference .introImgContainer {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    .kusec_conference .introBoxContainer .introBox:not(.wideBox) {
+        width: calc(50% - 20px);
+    }
+    .section_eng .kusec_conference .introBoxContainer .introBox{
+        width: 100%;
+    }
+    .section_eng .kusec_conference .introBoxContainer .introBox img{
+        width: 600px;
+        height: 200px;
+    }
+    .kusec_conference .introBoxContainer .introBox {
+        height: 155px;
+    }
+
+    .kusec_conference .introBoxContainer .introBox>.boxText {
+        position: inherit;
+    }
+
+    .kusec_conference .backgroundTitle {
+        /* font-size: 24px; */
+        font-size: 1.714rem;
+        line-height: 30px;
+    }
+
+    .kusec_conference .introImgContainer .introImgWrap {
+        max-width: initial;
+    }
+
+    .kusec_conference .introImgContainer .introImgWrap .imgCrop img {
+        margin-left: -50%;
+        max-width: initial;
+    }
+
+    .kusec_conference .introImgContainer .introTxtWrap {
+        padding: 20px;
+    }
+   
+    /*--------------------------------------------------------------
+  >> 주요사업 project_introduce
+----------------------------------------------------------------*/
+    .project_introduce .introWrap .introPic .picTitle {
+        display: none;
+    }
+
+    .project_introduce .introWrap {
+        width: 430px;
+        max-width: 430px;
+        margin: 0 auto;
+        overflow: inherit;
+        position: relative;
+    }
+
+    .project_introduce .introWrap:nth-child(odd) .introPic,
+    .project_introduce .introWrap:nth-child(even) .introTxt,
+    .project_introduce .introWrap:nth-child(odd) .introTxt,
+    .project_introduce .introWrap:nth-child(even) .introPic {
+        float: none;
+    }
+
+    .project_introduce .introWrap .introPic,
+    .project_introduce .introWrap .introTxt {
+        margin: 0 auto;
+    }
+
+    .project_introduce .introWrap .introTxt {
+        position: absolute;
+        z-index: 1;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .project_introduce .introWrap:nth-child(odd) .introTxt {
+        top: 0;
+    }
+
+    .project_introduce .introWrap .introTxt .txtTitle {
+        text-align: center;
+    }
+
+    .project_introduce .introWrap .introTxt .fc_999 {
+        color: #fff;
+    }
+    
+    .engPage .div_box{
+    border-top: none;
+    padding-top: 0;
+    }
+    
+    .section_eng .Confe_box .confe_ul li .time{
+        width: 100%;
+        padding: 0 10px 10px;
+    }
+    .section_eng .Confe_box .confe_ul li .month{
+        width: 20%;
+    }
+    .mainContainer .linkbx ul li{
+        text-align: center;
+        width: calc((100vw - 160px) / 2) !important;
+    }
+    .footer p{
+        padding-top: 0;
+    }
+}
+
+@media(max-width:480px) {
+    .section_eng .contentBox,
+    .mainbx .row .boardbx .noticebx2,
+    .mainbx .row .boardbx .infobx2,
+    .kusec_conference .introBoxContainer .imgBox,
+    .kusec_conference .introBoxContainer .wideBox,
+    .kusec_conference .introBoxContainer .introBox:not(.wideBox),
+    .mainContainer .contactKusec .contactWrap,
+    .mainContainer .aboutKusec .sectionWrap,
+    .mainContainer .keyActivities .sectionWrap,
+    .section_eng .contractWrap_mobile .contractMap ul,
+    .section_eng .project_introduce .introWrap,
+    .section_eng .Confe_box .confe_ul,
+    .section_eng .Confe_box .confe_ul li .month,
+    .section_eng .Confe_box .confe_ul li .text_last{
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .headerWrapper .headerWrap,
+    .kusec_conference .introBoxContainer,
+    .kusec_conference .introImgContainer {
+        min-width: 300px;
+    }
+    .contract_table tbody tr td:nth-child(2)~*, 
+    .contract_table thead tr th:nth-child(2)~*{
+        display: none;
+    }
+    .contract_table tbody tr td:nth-child(1), 
+    .contract_table thead tr th:nth-child(1){
+        width: 20%;
+    }
+    .contract_table tbody tr td:nth-child(2), 
+    .contract_table thead tr th:nth-child(2){
+        width: 80%;
+    }
+    .kusec_conference .introBoxContainer,
+    .section_eng .sec_banner div>.d-flex>div {
+        width: calc(100% - 20px);
+    }
+    .section_eng,
+    .kusec_conference .introImgContainer,
+    .kusec_conference .introImgContainer .introTxtWrap,
+    .kusec_conference .introBoxContainer .imgBox .picTitle {
+        width: calc(100% - 40px);
+    }
+    .section_eng .contractWrap_mobile .contractMap{
+        display: block;
+    }
+    .mainbx .row .boardbx .noticebx2,
+    .mainbx .row .boardbx .infobx2 {
+        float: inherit;
+        background-size: contain;
+        background-position: right;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mainbx .row .boardbx .noticebx2::after,
+    .mainbx .row .boardbx .infobx2::after {
+        width: 55%;
+        height: 100%;
+        content: '';
+        display: block;
+    }
+
+    .mainbx .row .boardbx .noticebx2::after {
+        background-color: #96C93E;
+    }
+
+    .mainbx .row .boardbx .infobx2::after {
+        background-color: #00A6E2;
+    }
+
+    .mainbx .row .boardbx .noticebx2 h3,
+    .mainbx .row .boardbx .infobx2 h3 {
+        margin: 20px;
+    }
+
+    .kusec_conference .introBoxContainer .imgBox .picTitle .fz20,
+    .kusec_conference .introImgContainer .introImgWrap .picTitle .fz20 {
+        /* font-size: 14px; */
+        font-size: 1rem;
+    }
+
+    .kusec_conference .introBoxContainer .imgBox img {
+        max-width: initial;
+        margin-left: -50%;
+        margin-right: -50%;
+    }
+
+    .kusec_conference .introBoxContainer .introBox.imgBox {
+        height: 202px;
+    }
+
+    .kusec_conference .introBoxContainer .introBox {
+        height: auto;
+    }
+
+    .kusec_conference .introBoxContainer .introBox>.boxText {
+        position: initial;
+    }
+
+    .kusec_conference .introImgContainer .introImgWrap .picTitle {
+        top: 20px;
+        left: 20px;
+    }
+
+    .kusec_conference .introImgContainer .introTxtWrap {
+        padding: 10px;
+        margin: -100px auto 0;
+    }
+
+    .mainContainer .mainTitle {
+        /* font-size: 20px; */
+        font-size: 1.429rem;
+    }
+
+    /* .mainContainer .contactKusec .picTitle{
+        height: 130px;
+        top: calc(50% - 130px / 2);
+        bottom: calc(50% - 130px / 2);
+    } */
+    .mainContainer .keyActivities .keyBox{
+        margin: 10px auto;
+    }
+    .mainContainer .relatedOrganizations .picTitle{
+        height: 140px;
+        top: calc(50% - 140px / 2);
+        bottom: calc(50% - 140px / 2);
+    }
+    .section_eng .contractWrap_mobile .contractMap{
+        text-align: center;
+    }
+    .project_introduce .introWrap{
+        max-width: 300px;
+    }
+    .project_introduce .introWrap .introTxt{
+        padding: 10px;
+    }
+    .project_introduce .introWrap .introTxt .txtTitle{
+        width: 100%;
+        padding: 4px 0;
+        /* font-size: 14px; */
+        font-size: 1rem;
+    }
+    .project_introduce .introWrap .introTxt .fc_999{
+        line-height: 25px;
+        /* font-size: 12px; */
+        font-size: 0.857rem;
+    }
+    .project_introduce .introWrap .introPic{
+        width: 300px;
+        height: 200px;
+    }
+    .section_eng .project_introduce .introWrap .introTxt .fc_999{
+        /* font-size: 10px; */
+        font-size: 0.714rem;
+        line-height: 19px;
+    }
+    .mainContainer .linkbx ul li{
+        text-align: center;
+        width: calc((100vw - 160px) / 1) !important;
+    }
+    .section_eng .sec_banner>div>.h3{
+        text-align: center;
+    }
+    .section_eng .Confe_box .confe_ul li .time, 
+    .section_eng .Confe_box .confe_ul li .month,
+    .section_eng .Confe_box .confe_ul li .text_last{
+        padding: 10px;
+    }
+}
+
+@media(max-width:375px) {
+    .project_introduce .introWrap .introTxt {
+        min-width: 300px;
+        left: 0;
+        right: 0;
+    }
+
+    .project_introduce .introWrap .introPic {
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .project_introduce .introWrap .introPic img {
+        max-width: inherit;
+        height: 100%;
+        left: -100%;
+        right: -100%;
+        margin: auto;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .mainbx .row .boardbx .noticebx2::after,
+    .mainbx .row .boardbx .infobx2::after {
+        width: 40%;
+    }
+}

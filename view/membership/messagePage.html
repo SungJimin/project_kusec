@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Korea-U.S. Economic Council.Inc</title>
+	<link rel="stylesheet" href="/project_kusec/resources/css/kusec_newReset.css">
+    <link rel="stylesheet" href="/project_kusec/resources/css/kusec_common.css">
+    <link rel="stylesheet" href="/project_kusec/resources/css/kusec_img-icon.css">
+    <link rel="stylesheet" href="/project_kusec/resources/css/kusec_basicStyle.css">
+    <link rel="stylesheet" href="/project_kusec/resources/css/kusec_responsiveStyle.css">
+    <script src="/project_kusec/resources/js/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+	 <!-- header -->
+    <!-- <? include '/project_kusec/view/includes/header_eng.html' ?> -->
+    <div class="load-html" data-source="/project_kusec/view/includes/header_eng.html"></div>
+
+	<section class="section_eng">
+		<div class="contentBox textAlign_center">
+			<div class="error_text">
+			<p>
+				Mail has been sent.
+			</p>
+			<div class="kusec-bgc_point btn_detailView">
+				<a href="/project_kusec/view/index.html">Back to Main Page</a>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+    <!-- footer -->
+    <!-- <? include '/project_kusec/view/includes/footer_eng.html' ?> -->
+    <div class="load-html" data-source="/project_kusec/view/includes/footer_eng.html"></div>
+    <script>
+        $(document).ready(function(){
+            $(".load-html").each(function () {
+                $(this).load(this.dataset.source);
+            });
+         });
+    </script>
+</body>
+
+</html>
