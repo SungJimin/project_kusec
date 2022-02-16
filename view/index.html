@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/project_kusec/resources/css/kusec_basicStyle.css">
     <link rel="stylesheet" href="/project_kusec/resources/css/kusec_responsiveStyle.css">
     <script src="/project_kusec/resources/js/jquery-3.1.1.js"></script>
+    <script src="/project_kusec/resources/js/common.js"></script>
 </head>
 
 <body>
@@ -175,13 +176,7 @@
     <!-- footer -->
     <!-- <? include '/project_kusec/view/includes/footer_eng.html' ?> -->
     <div class="load-html" data-source="/project_kusec/view/includes/footer_eng.html"></div>
-    <script>
-        $(document).ready(function () {
-            $(".load-html").each(function () {
-                $(this).load(this.dataset.source);
-            });
-        });
-    </script>
+        
 </body>
 
 </html>
